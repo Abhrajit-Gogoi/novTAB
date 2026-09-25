@@ -26,7 +26,7 @@ const searchInput = document.getElementById("search-input");
 
 searchInput.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    const query = searchInput.ariaValueMax.trim();
+    const query = searchInput.value.trim();
 
     if (query === "") return;
 
@@ -35,4 +35,3 @@ searchInput.addEventListener("keydown", function (event) {
     window.location.href = url;
   }
 });
-
